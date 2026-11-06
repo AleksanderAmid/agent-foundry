@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "purpose": "Public development prompts; not executed benchmark results",
+  "cases": [
+    {"id": "repo-new", "prompt": "Set up this new Rust repository so coding agents can discover commands and verify their work.", "expected": "activate", "reason": "Agent repository interface"},
+    {"id": "repo-existing", "prompt": "Make this existing monorepo easier for agents to operate without moving its source folders.", "expected": "activate", "reason": "Preserve native layout and add operational metadata"},
+    {"id": "skill-create", "prompt": "Turn our proven contract-review procedure into a reusable Codex skill.", "expected": "activate", "reason": "Package a demonstrated workflow"},
+    {"id": "skill-improve", "prompt": "This skill activates on unrelated requests. Narrow and evaluate its description.", "expected": "activate", "reason": "Skill routing improvement"},
+    {"id": "repo-unclear", "prompt": "Audit the repo instructions and identify which checks an agent can actually run.", "expected": "activate", "reason": "Repository instruction and verification audit"},
+    {"id": "ordinary-feature", "prompt": "Add a dark-mode switch to this application.", "expected": "do_not_activate", "reason": "Ordinary feature implementation"},
+    {"id": "simple-fix", "prompt": "Fix the off-by-one error in this function.", "expected": "do_not_activate", "reason": "Ordinary bug fix"},
+    {"id": "git-help", "prompt": "Explain what git rebase does.", "expected": "do_not_activate", "reason": "General Git explanation"},
+    {"id": "negated", "prompt": "Do not reorganize the repository or create skills; just update this one test.", "expected": "do_not_activate", "reason": "Explicit scope exclusion"},
+    {"id": "generic-review", "prompt": "Review this pull request for correctness.", "expected": "do_not_activate", "reason": "Generic code review"}
+  ]
+}

@@ -1,0 +1,9 @@
+interface:
+  display_name: "Agent Foundry"
+  short_description: "Build agent-ready repositories and focused skills"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  brand_color: "#C6F16B"
+  default_prompt: "Use $agent-foundry to inspect this repository and implement the smallest useful agent interface with verified commands."
+policy:
+  allow_implicit_invocation: true

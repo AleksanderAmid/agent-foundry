@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#141b16">
+  <meta name="description" content="Agent Foundry: a portable skill and dependency-free toolkit for agent-ready repositories. Native layouts, explicit commands, focused context, verifiable work.">
+  <meta property="og:title" content="Agent Foundry — a workspace your agent can operate">
+  <meta property="og:description" content="Turn repository and skill research into a small, working toolkit. Open source. Python 3.11+. Zero runtime dependencies.">
+  <meta property="og:type" content="website">
+  <title>Agent Foundry — Built for agent-first work</title>
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="nav-wrap">
+  <nav class="nav shell" aria-label="Main navigation">
+    <a class="brand" href="#" aria-label="Agent Foundry home"><img src="assets/icon.svg" width="34" height="34" alt=""><span>agent<span class="brand-light">foundry</span><span class="brand-dot">.</span></span></a>
+    <div class="nav-links"><a href="#system">The system</a><a href="#workflow">Workflow</a><a href="#install">Install</a></div>
+    <a class="nav-source" href="https://github.com/AleksanderAmid/agent-foundry">View source <span aria-hidden="true">↗</span></a>
+  </nav>
+</header>
+<main id="main">
+  <section class="hero shell">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="status-dot"></span> OPEN SOURCE / V1.0</p>
+      <h1>A workspace<br>your agent<br><span>can operate.</span></h1>
+      <p class="hero-description">Good agents need more than a prompt. Give them a clear map, precise tools, and a way to prove the work is done.</p>
+      <div class="hero-actions"><a class="button button-primary" href="#install">Put it to work <span aria-hidden="true">↗</span></a><a class="text-link" href="#system">Explore the architecture <span aria-hidden="true">↓</span></a></div>
+      <div class="hero-footnote"><span>Python 3.11+</span><i></i><span>No runtime dependencies</span><i></i><span>MIT licensed</span></div>
+    </div>
+    <div class="hero-art" aria-label="Illustration of a repository becoming an agent interface">
+      <div class="art-grid"></div>
+      <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+      <div class="art-label top-label">WORKSPACE / INTERFACE MAP</div>
+      <div class="source-stack">
+        <div class="file-label"><span class="file-icon">{ }</span><span>your native codebase</span><span class="tiny-pill">preserved</span></div>
+        <div class="stack-tree"><span>src/</span><span>tests/</span><span>native-manifest</span></div>
+      </div>
+      <div class="connector-line first-line"></div>
+      <div class="contract-card"><div class="card-caption">THE OPERATIONAL CONTRACT <span>01</span></div><strong>.agent/repository.json</strong><div class="contract-fields"><span>modules</span><span>commands</span><span>verification</span></div><div class="card-bottom"><span class="status-dot"></span> Explicit inputs. Observable outcomes.</div></div>
+      <div class="connector-line second-line"></div>
+      <div class="result-card"><span class="result-mark">✓</span><div><strong>Evidence, attached.</strong><span>Checks run. Gaps reported.</span></div><span class="result-arrow">↗</span></div>
+      <div class="art-label bottom-label">ILLUSTRATIVE FLOW · YOUR TOOLS STAY YOUR TOOLS</div>
+    </div>
+  </section>
+
+  <div class="compatibility"><div class="shell compatibility-inner"><p>ONE PORTABLE SKILL.<br><span>Host-aware installation.</span></p><div class="host-word">Codex</div><div class="host-word">Claude Code</div><div class="host-word muted">Agent Skills <span>↗</span></div><a href="https://github.com/AleksanderAmid/agent-foundry/blob/main/skills/agent-foundry/references/installation.md">Compatibility notes <span aria-hidden="true">↗</span></a></div></div>
+
+  <section id="system" class="section shell">
+    <div class="section-heading"><p class="eyebrow">01 / THE SYSTEM</p><h2>Small surface.<br>Clear responsibilities.</h2><p>Keep your language’s conventions. Add the missing interface between an agent’s intent and the project’s actual behavior.</p></div>
+    <div class="principles">
+      <article><span class="principle-number">[01]</span><div class="line-icon" aria-hidden="true">⌘</div><h3>Structure that fits.</h3><p>Describe native modules and commands. Your Rust crate, Python package, or monorepo keeps its own shape.</p><span class="micro-label">PRESERVE THE CODEBASE</span></article>
+      <article><span class="principle-number">[02]</span><div class="line-icon" aria-hidden="true">{ }</div><h3>Context on demand.</h3><p>A focused entry point routes to the procedure you need. Detailed references load when they are relevant.</p><span class="micro-label">KEEP DISCOVERY CHEAP</span></article>
+      <article><span class="principle-number">[03]</span><div class="line-icon" aria-hidden="true">↗</div><h3>Completion with proof.</h3><p>Validate the contract, run real checks, and report gaps. Structural validity never stands in for working software.</p><span class="micro-label">MAKE RESULTS OBSERVABLE</span></article>
+    </div>
+  </section>
+
+  <section id="workflow" class="work-section">
+    <div class="shell">
+      <div class="section-heading compact"><p class="eyebrow">02 / THE WORKFLOW</p><h2>From scattered context<br>to repeatable work.</h2><p>Inspect. Specify. Build. Verify. Each step has a concrete interface and an honest stopping condition.</p></div>
+      <div class="workbench">
+        <div class="work-options" role="tablist" aria-label="Toolkit examples" aria-orientation="vertical">
+          <button id="tab-inspect" class="work-option active" type="button" role="tab" aria-selected="true" aria-controls="demo-panel" data-demo="inspect"><span>01</span><div><strong>Understand the workspace</strong><small>Find the existing conventions before adding new ones.</small></div><b aria-hidden="true">↗</b></button>
+          <button id="tab-contract" class="work-option" type="button" role="tab" aria-selected="false" aria-controls="demo-panel" tabindex="-1" data-demo="contract"><span>02</span><div><strong>Make operations explicit</strong><small>A small contract for commands, modules, and checks.</small></div><b aria-hidden="true">↗</b></button>
+          <button id="tab-skill" class="work-option" type="button" role="tab" aria-selected="false" aria-controls="demo-panel" tabindex="-1" data-demo="skill"><span>03</span><div><strong>Package useful expertise</strong><small>A real procedure, a precise trigger, a portable skill.</small></div><b aria-hidden="true">↗</b></button>
+        </div>
+        <div id="demo-panel" class="terminal" role="tabpanel" aria-labelledby="tab-inspect" tabindex="0"><div class="terminal-bar"><div class="window-dots"><i></i><i></i><i></i></div><span id="demo-title">foundry / inspect</span><span class="demo-label">EXAMPLE</span></div><pre id="demo-code"><code>$ foundry.py inspect --root ./project
+
+{
+  "status": "completed",
+  "data": {
+    "native_manifests": [
+      { "path": "Cargo.toml", "ecosystem": "rust" }
+    ],
+    "truncated": false,
+    "instructions_present": true
+  }
+}</code></pre><div class="terminal-note" id="demo-note"><span class="status-dot"></span> Bounded inspection. No repository commands executed.</div></div>
+      </div>
+      <p class="example-caption">Abbreviated examples for readability. Run the CLI for complete JSON results.</p>
+      <div class="workflow-image"><img src="assets/workflow.svg" loading="lazy" width="1200" height="280" alt="Four stages: inspect native structure, specify operations, build focused skills, verify actual results."></div>
+    </div>
+  </section>
+
+  <section id="install" class="section shell install-section">
+    <div class="install-copy"><p class="eyebrow">03 / GET STARTED</p><h2>Make it part<br>of your toolkit<span class="accent">.</span></h2><p>Clone the source, inspect it, then install a fresh copy. No API key. No package downloads. Your existing skills stay intact.</p><a class="text-link" href="https://github.com/AleksanderAmid/agent-foundry#install">Read the complete installation guide <span aria-hidden="true">↗</span></a><div class="install-detail"><span>REQUIRES</span><strong>Python 3.11+ & Git</strong><span>LICENSE</span><strong>MIT · use, adapt, contribute</strong></div></div>
+    <div class="install-box"><div class="host-picker" aria-label="Installation target"><button type="button" class="active" aria-pressed="true" data-host="codex">Codex</button><button type="button" aria-pressed="false" data-host="claude">Claude Code</button><button type="button" aria-pressed="false" data-host="agents">Portable</button></div><div class="install-code-wrap"><div class="code-label">TERMINAL <button type="button" id="copy-install" class="copy-button">Copy commands <span aria-hidden="true">⧉</span></button></div><pre id="install-code"><code>git clone https://github.com/AleksanderAmid/agent-foundry.git
+cd agent-foundry
+python skills/agent-foundry/scripts/foundry.py install --host codex --apply</code></pre></div><div class="invoke"><span>THEN, IN YOUR AGENT</span><code id="invoke-code">Use $agent-foundry to inspect this repository.</code></div><p id="install-note">Installs into your Codex skills directory. Available on your next turn; refresh the session if needed.</p><p class="sr-only" id="copy-status" role="status" aria-live="polite"></p></div>
+  </section>
+
+  <section class="research shell"><div><p class="eyebrow">RESEARCH → IMPLEMENTATION</p><h2>Evidence informs the design.<br>Your results decide its value.</h2></div><div><p>Built from deep research into repository organization and agent skills. Focused tooling and explicit limits make the framework practical to test, adapt, and improve.</p><a class="text-link" href="https://github.com/AleksanderAmid/agent-foundry/blob/main/skills/agent-foundry/references/research.md">Explore the research decisions <span aria-hidden="true">↗</span></a><small>Software checks validate the helpers. They do not prove a universal gain in model performance.</small></div></section>
+  <section class="closing shell"><p>Better foundations.<br><span>Room to build.</span></p><a class="button button-primary" href="https://github.com/AleksanderAmid/agent-foundry">Explore on GitHub <span aria-hidden="true">↗</span></a></section>
+</main>
+<footer class="shell footer"><a class="brand" href="#"><img src="assets/icon.svg" alt="" width="28" height="28"><span>agent<span class="brand-light">foundry</span>.</span></a><p>A small foundation for agent-first work.</p><div><a href="https://github.com/AleksanderAmid/agent-foundry/blob/main/LICENSE">MIT License</a><a href="https://github.com/AleksanderAmid/agent-foundry/blob/main/CONTRIBUTING.md">Contribute ↗</a></div></footer>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="620" viewBox="0 0 1280 620" role="img" aria-labelledby="title desc">
+<title id="title">Agent Foundry</title><desc id="desc">A workspace your agent can operate. A small repository contract connects focused skills to verifiable results.</desc>
+<defs><pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#263329" stroke-width=".6"/></pattern><linearGradient id="fade"><stop stop-color="#17251b"/><stop offset="1" stop-color="#121714"/></linearGradient></defs>
+<rect width="1280" height="620" rx="18" fill="#121714"/><rect x="640" width="640" height="620" fill="url(#fade)"/><rect width="1280" height="620" fill="url(#grid)"/>
+<g font-family="Arial,Helvetica,sans-serif"><rect x="54" y="48" width="38" height="38" rx="10" fill="#c6f16b"/><path d="m63 75 9-19h3l9 19h-6l-2-5h-7l-2 5zm8-9h4l-2-5z" fill="#151916"/><text x="108" y="75" fill="#eff4e9" font-size="24" font-weight="700">AGENT FOUNDRY</text><text x="1130" y="73" fill="#99a795" font-size="14">V 1.0</text>
+<text x="56" y="189" fill="#c6f16b" font-size="14" letter-spacing="3">CONTEXT. ACTION. EVIDENCE.</text>
+<text x="50" y="282" fill="#f1f4e9" font-size="78" font-weight="700" letter-spacing="-3">A workspace</text><text x="50" y="372" fill="#f1f4e9" font-size="78" font-weight="700" letter-spacing="-3">your agent</text><text x="50" y="462" fill="#c6f16b" font-size="78" font-weight="700" letter-spacing="-3">can operate.</text>
+<text x="56" y="551" fill="#a2afa3" font-size="18">Portable skills · Native layouts · Explicit verification</text>
+<path d="M879 224v45m0 108v44" stroke="#c6f16b" stroke-width="2" stroke-dasharray="5 7"/>
+<g fill="#19221c" stroke="#3b4e3b"><rect x="696" y="126" width="438" height="98" rx="12"/><rect x="738" y="269" width="438" height="108" rx="12"/><rect x="696" y="421" width="438" height="110" rx="12"/></g>
+<g font-family="Consolas,monospace"><text x="723" y="159" fill="#91a28e" font-size="12">01 / DISCOVERY</text><text x="723" y="194" fill="#f0f4e9" font-size="22">AGENTS.md</text><text x="765" y="303" fill="#91a28e" font-size="12">02 / OPERATIONS</text><text x="765" y="339" fill="#c6f16b" font-size="21">.agent/repository.json</text><text x="723" y="455" fill="#91a28e" font-size="12">03 / COMPLETION</text><text x="723" y="492" fill="#f0f4e9" font-size="22">Checks → evidence → result</text></g>
+<circle cx="1105" cy="175" r="6" fill="#c6f16b"/><circle cx="1147" cy="321" r="6" fill="#c6f16b"/><circle cx="1105" cy="474" r="6" fill="#c6f16b"/>
+</g></svg>

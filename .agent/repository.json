@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0.0",
+  "name": "agent-foundry",
+  "modules": [
+    {
+      "id": "skill",
+      "path": "skills/agent-foundry",
+      "purpose": "Portable instructions and deterministic tools"
+    },
+    {
+      "id": "site",
+      "path": "docs",
+      "purpose": "Public static documentation website"
+    },
+    {
+      "id": "tests",
+      "path": "tests",
+      "purpose": "Independent helper regression checks"
+    }
+  ],
+  "commands": [
+    {
+      "id": "test",
+      "argv": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": ".",
+      "purpose": "Run isolated functional and adversarial tests"
+    },
+    {
+      "id": "validate",
+      "argv": [
+        "python",
+        "-B",
+        "skills/agent-foundry/scripts/foundry.py",
+        "validate",
+        "--root",
+        "."
+      ],
+      "cwd": ".",
+      "purpose": "Validate this repository contract"
+    },
+    {
+      "id": "validate-skill",
+      "argv": [
+        "python",
+        "-B",
+        "skills/agent-foundry/scripts/foundry.py",
+        "validate-skill",
+        "--path",
+        "skills/agent-foundry"
+      ],
+      "cwd": ".",
+      "purpose": "Check the released skill package"
+    }
+  ],
+  "verification": [
+    "test",
+    "validate",
+    "validate-skill"
+  ],
+  "context": [
+    "README.md",
+    "CONTRIBUTING.md"
+  ]
+}
